@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stafeta Cunoasterii</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #007bff; /* Albastru vibrant */
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav ul {
+            list-style-type: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #ffcc00; /* Galben luminos */
+        }
+
+        section {
+            padding: 2em;
+            margin: 1em auto;
+            max-width: 900px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-10px);
+        }
+
+        h1, h2, h3 {
+            color: #007bff; /* Albastru vibrant */
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        h1 {
+            animation-delay: 0.2s;
+        }
+
+        h2 {
+            animation-delay: 0.4s;
+        }
+
+        h3 {
+            animation-delay: 0.6s;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 1em;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        p:nth-of-type(1) {
+            animation-delay: 0.8s;
+        }
+
+        p:nth-of-type(2) {
+            animation-delay: 1s;
+        }
+
+        p:nth-of-type(3) {
+            animation-delay: 1.2s;
+        }
+
+        .orar {
+            list-style-type: none;
+            padding: 0;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        .orar li {
+            margin-bottom: 1em;
+            font-size: 1.1em;
+            color: #333;
+            animation-delay: 1.4s;
+        }
+
+        button {
+            background-color: #ffcc00; /* Galben luminos */
+            color: white;
+            border: none;
+            padding: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff7043; /* Portocaliu cald */
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #007bff; /* Albastru vibrant */
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Meniu de navigare -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#acasa">Acasă</a></li>
+                <li><a href="#activitati">Activități</a></li>
+                <li><a href="#orar">Orar</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Pagina Acasă -->
+    <section id="acasa">
+        <h1>Stafeta Cunoasterii</h1>
+        <p>
+            Proiectul 'Stafeta Cunoasterii' promovează învățarea reciprocă între seniori și tineri, oferind un spațiu de învățare activă și colaborativă. 
+            Misiunea noastră este să sprijinim educația pe tot parcursul vieții, încurajând diversitatea, solidaritatea și incluziunea socială. 
+            Prin ateliere și activități creative, vrem să facilităm comunicarea și să construim o comunitate activă, în care toți membrii pot învăța unii de la alții.
+        </p>
+    </section>
+
+    <!-- Pagina Activităților -->
+    <section id="activitati">
+        <h2>Activități</h2>
+        <div class="atelier">
+            <h3>Atelier de Meșteșuguri</h3>
+            <p>Seniorii și tinerii învață împreună tehnici tradiționale de meșteșuguri, cum ar fi țesutul, olăritul sau cusutul, pentru a păstra tradițiile vii.</p>
+        </div>
+        <div class="atelier">
+            <h3>Atelier de Gătit</h3>
+            <p>În acest atelier, participanții își împărtășesc rețetele tradiționale din familiile lor și învață să gătească mâncăruri diverse, atât tradiționale, cât și moderne.</p>
+        </div>
+        <div class="atelier">
+            <h3>Atelier de Tehnologie</h3>
+            <p>Seniorii învață să folosească tehnologia modernă, de la telefoane mobile și computere până la aplicații care îi ajută să rămână conectați cu familia și prietenii.</p>
+        </div>
+        <div class="atelier">
+            <h3>Atelier de Dezvoltare Personală</h3>
+            <p>Atelierul de dezvoltare personală oferă participanților instrumente pentru îmbunătățirea abilităților de viață, gestionarea timpului și îmbunătățirea stimei de sine.</p>
+        </div>
+    </section>
+
+    <!-- Pagina Orar -->
+    <section id="orar">
+        <h2>Orarul Activităților</h2>
+        <ul class="orar">
+            <li><strong>Luni:</strong> 11:00 - 12:00 Atelier Tehnologie, 12:00 - 14:00 Atelier Lectură și Dezbateri</li>
+            <li><strong>Marți:</strong> 18:00 - 20:00 Atelier de Film</li>
+            <li><strong>Miercuri:</strong> 14:00 - 15:00 Atelier Jocuri de Societate</li>
+            <li><strong>Joi:</strong> 11:00 - 13:00 Atelier Meșteșuguri</li>
+            <li><strong>Vineri:</strong> 16:00 - 18:00 Atelier Gătit</li>
+            <li><strong>Sâmbătă:</strong> 10:00 - 12:00 Atelier Dezvoltare Personală</li>
+        </ul>
+    </section>
+
+    <!-- Pagina Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Vă invităm să faceți parte din grupul nostru de comunicare activă pe WhatsApp! Aici putem discuta despre activități, cerințe de ajutor sau orice alte informații utile.</p>
+        <a href="https://chat.whatsapp.com/EVafe3lBnxXHJa3YnpwUjS" target="_blank">
+            <button>Alăturați-vă grupului WhatsApp</button>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Stafeta Cunoasterii. Toate drepturile rezervate.</p>
+    </footer>
+
+</body>
+</html>
